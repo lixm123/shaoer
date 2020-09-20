@@ -1,0 +1,92 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.select{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+border-bottom:2px solid #ff0000;
+}
+.normal{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.name{
+  margin: 11px;
+  margin-top: 13px;
+}
+.imghz{
+  margin:5px;
+}
+.hz{
+  margin: 10px;
+  position: absolute;
+  right: 3px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.bigtupian{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.yinyue{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.yinyue-two{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.yinyue-three{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.tupian{
+  margin: 10px;
+  margin-left: 40px;
+}
+.text{
+  margin-left: 25px;
+}
+.num{
+  margin-left: 43px;
+  color: #c0c0c0;
+}
+.top-two{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.shuyu{
+  font-size: 14px;
+color: #c0c0c0;
+margin-top: 14px;
+}
+.yangmi{
+position: absolute;
+right: 2px;
+bottom: 7px;
+}

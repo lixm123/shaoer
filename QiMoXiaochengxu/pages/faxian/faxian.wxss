@@ -1,0 +1,52 @@
+.nav{
+  display: flex;/*flex：弹性布局*/
+  flex-direction: row;/*方向:行（横向）*/
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.nav-image{
+  width:25px;
+  height: 23px;
+}
+.nav-item{
+  width: 25%;
+  margin-top: 20px;
+  font-size:12px;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  color: #000000;
+  margin:10px;
+  margin-top:20px;
+}
+.class-hr{
+  color: #f3260bc2;
+  width: 2px;
+  margin-right: 5px;
+}
+.more{
+  font-size: 14px;
+  right: 2px;
+  position: absolute;
+  color: #363636;
+}
+.tupian{
+   display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.text{
+   display: flex;
+  flex-direction: row;
+  margin-right:10px;
+  margin-left: 10px;
+ margin-bottom: 30px; 
+ 
+}

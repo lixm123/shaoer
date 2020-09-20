@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/faxian/faxian",
+    "pages/mymusic/mymusic",
+    "pages/zhibo/zhibo",
+    "pages/me/me",
+    "pages/faxianDetail/faxianDetail"
+  ],
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/faxian/faxian",
+        "text": "发现音乐",
+        "iconPath": "/images/tubiao/faxian-0.png",
+        "selectedIconPath": "/images/tubiao/faxian-1.png"
+      },
+      {
+        "pagePath": "pages/mymusic/mymusic",
+        "text": "我的音乐",
+        "iconPath": "/images/tubiao/wdyinyue-0.png",
+        "selectedIconPath": "/images/tubiao/wdyinyue-1.png"
+      },
+      {
+        "pagePath": "pages/zhibo/zhibo",
+        "text": "直播",
+        "iconPath": "/images/tubiao/zhibo-0.png",
+        "selectedIconPath": "/images/tubiao/zhibo-1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/tubiao/me-0.jpg",
+        "selectedIconPath": "/images/tubiao/me-1.jpg"
+      }
+      
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dc3023",
+    "navigationBarTitleText": "千千音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

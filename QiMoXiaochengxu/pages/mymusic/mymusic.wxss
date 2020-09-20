@@ -1,0 +1,330 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.select{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+border-bottom:2px solid #ff0000
+}
+.normal{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+
+}
+.qianti{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top:5px;
+}
+.guoyu{
+  margin: 5px;
+  background-color: #f7f3f3;
+  color: #888888;
+  border-radius: 5px;
+  
+}
+.liuxing{
+margin: 5px;
+ background-color: #f7f3f3;
+   color: #888888;
+     border-radius: 5px;
+}
+.nine{
+margin: 5px;
+    background-color: #f7f3f3;
+  color: #888888;
+    border-radius: 5px;
+}
+.chuanshao{
+margin: 5px;
+ background-color: #f7f3f3;
+  color: #888888;
+    border-radius: 5px;
+}
+.yueyu{
+margin: 5px;
+    background-color: #f7f3f3;
+  color: #888888;
+    border-radius: 5px;
+}
+.shaixuan{
+margin: 5px;
+  color: #888888;
+  position: absolute;
+  right:20px;
+
+}
+.img{
+  margin: 5px;
+  color: #dfdfdf;
+  position: absolute;
+  right:4px;
+  margin-top: 10px;
+  
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.select{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+border-bottom:2px solid #ff0000
+}
+.normal{
+width:33.3%;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+font-size: 13px;
+
+}
+.huati{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+.gd{
+  margin:10px;
+font-weight: bold;
+}
+.class-hr{
+  color: #f3260bc2;
+  width: 2px;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+.more{
+  right:2px;
+  position: absolute;
+  margin:10px;
+  color: #535353;
+
+}
+.remen{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ 
+}
+.tu{
+  margin: 5px;
+  text-align: center;
+  float: left;
+
+
+
+}
+.yuanjiao{
+    border-radius: 10px;
+}
+.title{
+  width:90px;
+  font-size: 12px;
+  margin: 5px;
+ text-align: center;
+ vertical-align: center;
+ margin-left: 30px;
+}
+
+
+.search{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.sousuokuang{
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  background: #f4f4f4;
+}
+.sousuotext{
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  padding: 0 20rpx;
+  background: #fff;
+  border-radius: 6rpx;
+}
+.sousuotext .icon-sousuo{
+  margin-right: 10rpx;
+}
+.sousuotext .search-input{
+  flex: auto;
+  font-size: 28rpx;
+}
+.sousuo{
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  
+}
+
+
+.hot-title{
+  display: block;
+  margin-bottom: 16rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+  color: rgba(0,0,0,.6);
+}
+.hot-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.rm{
+  display: block;
+
+  font-weight: bold;
+  font-size: 28rpx;
+  color: rgba(0,0,0,.6);
+  margin:16rpx;
+}
+.ge{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ge-text{
+  
+  margin-right: 28rpx;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #000;
+  border: 2rpx solid rgba(0,0,0,.6);
+  border-radius: 200rpx;
+
+}
+.dajingxuan{
+    display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ 
+}
+.jingxuan-photo{
+
+  margin: 5px;
+  text-align: center;
+  float: left;
+
+
+}
+
+
+
+.top{
+ margin: 10px;
+margin-bottom: 20px;
+}
+.item{
+  display: flex;
+  /*align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。*/
+  justify-content: space-between;  /*元素在主轴（页面）上左右两端或者上下两端开始排列*/
+position: relative;
+ 
+
+ 
+}
+.top .media{
+  float: left;
+ 
+}
+.top .media .img{
+width:20px;height:20px;
+float: left;left: 0px;
+margin-right: 130px;
+position: absolute;
+
+}
+
+
+.top .info{
+  flex: auto;
+  margin-left: 30rpx;
+  overflow: hidden;
+  position: relative;
+}
+.top .info .title{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ 
+}
+.top .info .text{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: rgba(0,0,0,.5);
+   margin-bottom: 20px;
+   margin-top: 7px;
+   margin-left: 3px;
+}
+.top .info .text text{
+  color: #000;
+  margin-left: 16rpx;
+  margin-right: 10rpx;
+}
+.songname{
+  font-size:15px;
+  font-family: "微软雅黑";
+}
+.singername{
+  font-family: "微软雅黑";
+  color: #cccaca;
+}
+.aixin{
+  position: absolute;
+  right: 5px;
+}
+.aixin .img{
+  position: absolute;
+  width:20px;height:20px;
+  right: 15px;
+
+
+}
+.aixin-two .img{
+  position: absolute;
+  width:20px;height:20px;
+  right: 60px;
+
+}
+.aixin-three .img{
+  position: absolute;
+  width:15px;height:15px;
+ left:270px;
+
+
+}

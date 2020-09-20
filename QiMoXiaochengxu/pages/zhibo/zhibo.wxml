@@ -1,0 +1,31 @@
+
+<view class="container">
+    <view class="huati">
+    <view class="class-hr">|</view>
+      <view class="gd">推荐主播</view>
+     <view>
+      <label class="radio">
+        <radio value="1"/>过滤PK
+      </label>
+     </view>
+    </view>
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="zhibo">
+          <block wx:for="{{zhibo}}" >
+            <view class="tu">
+              <view>
+                <image src="{{item.imgPath}}" style="width:140px;height:150px;" mode="aspectFill" class="yuanjiao"></image>
+              </view>
+              <view class="title">
+                <text>{{item.label}}</text>
+              
+              </view>
+              <view class="title-two">
+              <text>{{item.nickName}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+

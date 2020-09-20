@@ -1,0 +1,58 @@
+
+<view class="nav">
+  <view id="0" bindtap="switchNav" class="{{currentTab==0?'select':'normal'}}">单曲/20</view>
+  <view id="1" bindtap="switchNav" class="{{currentTab==1?'select':'normal'}}">歌单</view>
+  <view id="2" bindtap="switchNav" class="{{currentTab==2?'select':'normal'}}">歌手</view>
+   <view id="3" bindtap="switchNav" class="{{currentTab==3?'select':'normal'}}">专辑</view>
+    <view id="4" bindtap="switchNav" class="{{currentTab==4?'select':'normal'}}">文件夹</view>
+</view>
+
+
+
+<swiper current="{{currentTab}}" bindchange="swiperChange" style="height:{{swiperHeight}}">
+
+  <swiper-item item-id="0">
+<view class="qianti">
+  <text class="guoyu">国语</text>
+  <text class="liuxing">流行</text>
+  <text class="nine">2019</text>
+  <text class="chuanshao">串烧</text>
+  <text class="yueyu">粤语</text>
+  <text class="shaixuan">筛选</text>
+    <image src="/images/biaoti/shaixuan.png" style="width:15px;height:15px;" class="img"></image>
+  </view>
+
+    <view id="danqu" style="margin:10px;">
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="top">
+          <block wx:for="{{paixing}}">
+             <view class="media">
+                <image class="img" src="/images/biaoti/jia.png"></image>
+              </view>
+            <view class="item">
+           
+              <view class="info">
+                <view class="text">
+                  <text class="songname">{{item.SongName}}</text>
+                  <text class="singername">{{item.SingerName}}</text>
+                  </view>
+                   
+              </view>
+              <view class="aixin">
+                <image class="img" src="/images/biaoti/aixin.png"></image>
+              </view>
+               <view class="aixin-two">
+                <image class="img" src="/images/biaoti/bofang.png"></image>
+              </view>
+               <view class="aixin-three">
+                <image class="img" src="/images/biaoti/diandian.png"></image>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+
+
+</swiper>

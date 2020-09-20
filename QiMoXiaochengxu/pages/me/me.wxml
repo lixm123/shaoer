@@ -1,0 +1,119 @@
+<view class="nav">
+  <view>
+    <image src="/images/tubiao/caid.png" style="width:20px;height:20px;margin-top:6px;"></image>
+  </view>
+  <view id="0" bindtap="switchNav" class="{{currentTab==0?'select':'normal'}}">音乐/20</view>
+  <view id="1" bindtap="switchNav" class="{{currentTab==1?'select':'normal'}}">动态</view>
+  <view id="2" bindtap="switchNav" class="{{currentTab==2?'select':'normal'}}">关注</view>
+  <view id="3" bindtap="switchNav" class="{{currentTab==3?'select':'normal'}}">消息</view>
+  <view>
+    <image src="/images/tubiao/sous.png" style="width:20px;height:20px;margin-top:5px;"></image>
+  </view>
+</view>
+
+<view class="top">
+  <image class="img" src="/images/tubiao/touxiang.jpg" style="width:30px;height:30px;margin-top:10px;"></image>
+  <text class="name">Jamie</text>
+  <image class="imghz" src="/images/tubiao/hz.png" style="width:16px;height:16px;margin-top:18px;"></image>
+  <text class="hz">开通绿钻</text>
+</view>
+
+<view class="bigtupian">
+<view class="yinyue">  
+    <view class="tupian">
+    <image src="/images/tubiao/music.jpg" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">全部歌曲</text>
+  </view>
+<view>
+  <text class="num">20</text>
+</view>
+</view>
+
+<view class="yinyue-two">
+  <view class="tupian">
+    <image src="/images/tubiao/download.png" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">下载歌曲</text>
+  </view>
+<view>
+  <text class="num">10</text>
+</view>
+</view>
+
+<view class="yinyue-three">
+    <view class="tupian">
+    <image src="/images/tubiao/zuijinbofang.png" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">最近播放</text>
+  </view>
+<view>
+  <text class="num">15</text>
+</view>
+
+</view>
+</view>
+
+
+<view class="bigtupian">
+<view class="yinyue">  
+    <view class="tupian">
+    <image src="/images/tubiao/ai.png" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">我喜欢</text>
+  </view>
+<view>
+  <text class="num">20</text>
+</view>
+</view>
+
+<view class="yinyue-two">
+  <view class="tupian">
+    <image src="/images/tubiao/bofang.png" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">下载MV</text>
+  </view>
+<view>
+  <text class="num">10</text>
+</view>
+</view>
+
+<view class="yinyue-three">
+    <view class="tupian">
+    <image src="/images/tubiao/tige.png" style="width:30px;height:30px;margin-top:8px;"></image>
+  </view>
+  <view class="quanbu">
+    <text class="text">听歌识曲</text>
+  </view>
+<view>
+  <text class="num">15</text>
+</view>
+
+</view>
+</view>
+
+
+<view class="top-two">
+ 
+  <text class="name">猜你喜欢</text>
+ <text class="shuyu">听专属于你的音乐</text>
+   <image class="yangmi" src="/images/tubiao/yangmi.jpg" style="width:30px;height:30px;margin-top:10px;"></image>
+</view>
+
+<view class="top-two">
+  <text class="name">每日推荐</text>
+ <text class="shuyu">期待你的观看</text>
+   <image class="yangmi" src="/images/tubiao/yangying.jpg" style="width:30px;height:30px;margin-top:10px;"></image>
+</view>
+
+
+<view class="top-two">
+  <text class="name">音乐圈</text>
+ <text class="shuyu">更多精彩</text>
+   <image class="yangmi" src="/images/tubiao/zhaoliying.jpg" style="width:30px;height:30px;margin-top:10px;"></image>
+</view>

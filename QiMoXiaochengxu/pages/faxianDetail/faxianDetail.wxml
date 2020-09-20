@@ -1,0 +1,148 @@
+<!--引入截取字符串的文件-->
+<wxs src="../../wxs/subutil.wxs" module="tools" />
+<!--推荐、排行榜、搜索页面跳转-->
+<view class="nav">
+  <view id="0" bindtap="switchNav" class="{{currentTab==0?'select':'normal'}}">推荐</view>
+  <view id="1" bindtap="switchNav" class="{{currentTab==1?'select':'normal'}}">排行榜</view>
+  <view id="2" bindtap="switchNav" class="{{currentTab==2?'select':'normal'}}">搜索</view>
+</view>
+<!--轮播图-->
+<view style="width:100%;height:120px;">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" style="height:120px;">
+    <block wx:for="{{images}}">
+      <swiper-item>
+        <image src="{{item}}" style="width:100%;height:120px"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--推荐-->
+<swiper current="{{currentTab}}" bindchange="swiperChange" style="height:{{swiperHeight}}">
+  <swiper-item item-id="0">
+    <view class="huati">
+      <view class="class-hr">|</view>
+      <view class="gd">热门歌单</view>
+      <view class="more">更多 ></view>
+    </view>
+
+    <view id="tuijian" style="margin:10px;">
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="remen">
+          <block wx:for="{{gedan}}">
+            <view class="tu">
+              <view>
+                <image src="{{item.album_1000_1000}}" style="width:140px;height:150px;" mode="aspectFill" class="yuanjiao"></image>
+              </view>
+              <view class="title">
+                <text>{{item.title}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+
+
+    <view class="huati">
+      <view class="class-hr">|</view>
+      <view class="gd">精选专区</view>
+      <view class="more">更多 ></view>
+    </view>
+
+    <view id="tuijian" style="margin:10px;">
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="remen">
+          <block wx:for="{{jxzq}}">
+
+            <view class="tu">
+              <view>
+                <image src="{{item.bannerurl}}" style="width:140px;height:150px;" mode="aspectFill" class="yuanjiao"></image>
+              </view>
+              <view class="title">
+                <text>{{item.name}}</text>
+              </view>
+            </view>
+
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+
+
+    <view class="huati">
+      <view class="class-hr">|</view>
+      <view class="gd">今日社区精选</view>
+      <view class="more">更多 ></view>
+    </view>
+
+    <view id="tuijian" style="margin:10px;">
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="remen">
+          <block wx:for="{{jingxuan}}">
+            <view class="tu">
+              <view>
+                <image src="{{item.data.content.data.cover.detail}}" style="width:140px;height:150px;" mode="aspectFill" class="yuanjiao"></image>
+              </view>
+              <view class="title">
+              <!--截取descripttion字符长度-->
+                <text>{{tools.sub(item.data.content.data.description)}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+
+<!--排行榜-->
+  <swiper-item item-id="1">
+    <view class="huati">
+      <view class="class" style="margin-top:19px; color: #f3260bc2;width: 2px;margin-right: 5px;">|</view>
+      <view class="gd" style="margin-top:20px;">千千热歌排行榜</view>
+      <view class="more" style="margin-top:20px;">更多 ></view>
+    </view>
+    <view id="paixingbang" style="margin:10px;">
+      <scroll-view scroll-x="true" style="width:100%;">
+        <view class="top">
+          <block wx:for="{{paixing}}">
+            <view class="item">
+              <view class="media">
+                <image class="img" src="{{item.SingerImg}}"></image>
+              </view>
+              <view class="info">
+                <view class="text">{{index+1}}   <!--数量自动增加1-->
+                  <text>{{item.SongName}}</text>- {{item.SingerName}}</view>
+              </view>
+              <view class="arrow">
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+
+<!--搜索-->
+  <swiper-item item-id="2">
+    <view id="sousuo" style="margin:10px;">
+      <view class="sousuokuang">
+        <view class="sousuotext">
+          <icon type="search" size="16" class="icon-sousuo" />
+          <input type="text" placeholder="搜索歌曲、歌单、专辑" class="search-input" />
+        </view>
+        <view class="sousuo">搜索</view>
+      </view>
+      <view>
+        <view class="rm">热门搜索</view>
+        <view class="ge">
+          <block wx:for="{{gequ}}">
+            <view class="text">
+              <text class="ge-text">{{item.k}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
